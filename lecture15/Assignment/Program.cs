@@ -7,7 +7,7 @@
 
             Student students = new Student();
             string chooser = "1";
-            while (chooser != "0")
+            while (true)
             {
                 Console.WriteLine("\n--- menu ---");
                 Console.WriteLine("1. Print all students");
@@ -36,6 +36,7 @@
                         break;
                     case "0":
                         Console.WriteLine("Goodbye!");
+                        return;
                         break;
                     default: Console.WriteLine("Invalid choice!"); break;
                 }
