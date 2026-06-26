@@ -7,14 +7,14 @@
 
             Student students = new Student();
             string chooser = "1";
-            while (chooser != "5")
+            while (chooser != "0")
             {
                 Console.WriteLine("\n--- menu ---");
                 Console.WriteLine("1. Print all students");
                 Console.WriteLine("2. Add a student");
                 Console.WriteLine("3. Find a student");
                 Console.WriteLine("4. Update a student's score");
-                Console.WriteLine("5. Exit");
+                Console.WriteLine("0. Exit");
 
                 Console.WriteLine();
                 Console.Write("Choose a number from menu: ");
@@ -34,7 +34,7 @@
                     case "4":
                         students.UpdateScore();
                         break;
-                    case "5":
+                    case "0":
                         Console.WriteLine("Goodbye!");
                         break;
                     default: Console.WriteLine("Invalid choice!"); break;

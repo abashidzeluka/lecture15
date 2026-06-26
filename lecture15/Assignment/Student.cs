@@ -48,8 +48,8 @@ namespace Assignment
             name = char.ToUpper(name[0]) + name.Substring(1).ToLower();
 
             Console.Write("Please enter student score: ");
-            int score = Convert.ToInt32(Console.ReadLine());
-
+            int score = int.Parse(Console.ReadLine()); 
+            
             studentNames.Add(name);
             studentScores.Add(name, score);
         }
@@ -76,7 +76,7 @@ namespace Assignment
             name = char.ToUpper(name[0]) + name.Substring(1).ToLower();
 
             Console.Write("Please enter new score: ");
-            int score = Convert.ToInt32(Console.ReadLine());
+            int score = int.Parse(Console.ReadLine());
 
             for (int i = 0; i < studentNames.Count; i++)
             {
