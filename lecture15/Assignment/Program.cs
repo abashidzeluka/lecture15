@@ -37,7 +37,6 @@
                     case "0":
                         Console.WriteLine("Goodbye!");
                         return;
-                        break;
                     default: Console.WriteLine("Invalid choice!"); break;
                 }
             }
